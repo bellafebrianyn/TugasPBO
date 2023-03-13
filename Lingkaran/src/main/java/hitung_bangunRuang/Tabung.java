@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package hitung_bidang;
+package hitung_bangunRuang;
+
+import hitung_bangunDatar.*;
 
 /**
  *
@@ -17,11 +19,11 @@ public class Tabung extends Lingkaran {
     }
     
     public double hitungLuasTabung() {
-        return this.kelilingLingkaran * tinggi;
+        return super.getMenghitungKelilingLingkaran() * (getR()+this.tinggi);
     }
     
     public double hitungVolumeTabung() {
-        return this.luasLingkaran*tinggi;
+        return super.getMenghitungLuasLingkaran()* this.tinggi;
     }
 
     public double getTinggi() {

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package hitung_bidang;
+package hitung_bangunRuang;
 
 /**
  *
@@ -14,10 +14,10 @@ public class Tembereng extends Bola {
     public Tembereng(double sudut, float r) {
         super(r);
         this.sudut = sudut;
-        this.tinggi = getR()- getR()* Math.cos(getSudut()/2);
+        this.tinggi = getR()- getR()* Math.cos(sudut/2);
     }
 
-    private double getSudut() {
+    public double getSudut() {
         return sudut;
     }
 
@@ -38,6 +38,6 @@ public class Tembereng extends Bola {
     }
     
     public double hitungVolumeTembereng() {
-        return (double) ((2/3)*Math.PI*Math.pow((getR()/2), 2)*getTinggi());
+        return (double) (0.67*Math.PI*Math.pow((getR()/2), 2)*getTinggi());
     }
 }
