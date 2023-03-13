@@ -22,7 +22,7 @@ public class Kerucut extends Lingkaran {
     }
     
     public double hitungVolumeKerucut() {
-        return super.luasLingkaran + Math.PI * getR() * sisi;
+        return super.luasLingkaran + Math.PI * getR() * getSisi();
     }
 
     public double getTinggi() {
@@ -31,6 +31,14 @@ public class Kerucut extends Lingkaran {
 
     public void setTinggi(double tinggi) {
         this.tinggi = tinggi;
+    }
+
+    public double getSisi() {
+        return sisi;
+    }
+
+    public void setSisi(double sisi) {
+        this.sisi = sisi;
     }
 
 }
